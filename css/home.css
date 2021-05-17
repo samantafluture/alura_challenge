@@ -1,0 +1,28 @@
+body {
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #051D3B;
+}
+
+.site__header {
+    display: block;
+    margin: 1em;
+}
+
+.header__title {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header__title a {
+    display: block;
+    background-image: url(../img/alura_logo.svg);
+    background-repeat: no-repeat;
+    text-indent: -9000px; 
+    background-size: 45%;
+}
+
