@@ -1,4 +1,2 @@
 # Projeto Alura Challange
-
-#AluraChallenges
-#AluraDev
+## Primeira semana
