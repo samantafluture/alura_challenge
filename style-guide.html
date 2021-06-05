@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Gudie | AluraDev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/modules/code.css">
+    <link rel="stylesheet" href="assets/css/modules/buttons.css">
+    <link rel="stylesheet" href="assets/css/modules/input.css">
+    <link rel="stylesheet" href="assets/css/modules/item.css">
+    <link rel="stylesheet" href="assets/css/modules/card.css">
+</head>
+<body>
+    <main>
+
+        <!-- Module: Code Card -->
+        <div class="code">
+            <textarea name="codeEditor" class="code__editor" cols="30" rows="10" aria-label="Type your code" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'"></textarea>
+        </div> 
+
+        <!-- Module: Buttons -->
+        <button class="button button--outlined">Visualizar com o highlight</button>
+        <button class="button button--filled">Salvar projeto</button>
+
+        <!-- Module: Inputs -->
+        <input type="text" name="title" class="input" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
+        <textarea name="description" class="input input--description" cols="30" rows="5" placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'"></textarea>
+        <input type="search" name="search" class="input" placeholder="Busque por algo" aria-label="Busque por algo">
+        <select name="language" class="input">
+            <option selected value="1">JavaScript</option>
+            <option value="2">Python</option>
+            <option value="3">Java</option>
+        </select>
+
+        <!-- Module: List with Items -->
+        <ul class="list">
+            <a href="#">
+                <li class="item item--menu">
+                    <span class="item__icon item__icon--editor"></span>
+                    <p>Editor de código</p>
+                </li>
+            </a>
+            <a href="#">
+                <li class="item item--menu">
+                    <span class="item__icon item__icon--users"></span>
+                    <p>Comunidade</p>
+                </li>
+           </a>
+        </ul>
+
+        <!-- Module: Profile -->
+        <ul class="list">
+            <a href="#">
+                <li class="item item--user">
+                    <span class="item__icon item__icon--profile"></span>
+                    <p>Samanta</p>  
+                </li>
+            </a>
+        </ul>
+
+        <!-- Module: Project Card -->
+        <article class="card">
+            <div class="card_content">
+                <h2 class="title card_title">Título do Projeto</h2>
+                <p class="card_text">Essa é a descrição do meu projeto.</p>
+            </div>
+            <ul class="list card_social">
+                <li class="item item--social">
+                    <span class="item__icon item__icon--comment"></span>
+                    <p>9</p>
+                </li>
+                <li class="item item--social">
+                    <span class="item__icon item__icon--heart"></span>
+                    <p>9</p>
+                </li>
+                <li class="item social">
+                    <div class="social_profile">
+                        <span class="item__icon item__icon--profile social_user"></span>
+                        <p>@Samanta</p>
+                    </div>
+                 </li>
+            </ul>
+        </article>
+
+    </main>
+</body>
+</html>

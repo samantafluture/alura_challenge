@@ -1,0 +1,41 @@
+@import url(_variaveis.css);
+@import url(_reset.css);
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
+    color: var(--white);
+    
+    background-color: var(--blue-dark);
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.title{
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
+}
+
+.title--sb {
+    font-size: var(--font-size-sb);
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-sb);
+}
+
+.align--left {
+    text-align: left;
+}
+
+.align--center {
+    text-align: center;
+}
