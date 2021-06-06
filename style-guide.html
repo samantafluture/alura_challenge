@@ -7,6 +7,9 @@
     <title>Style Gudie | AluraDev</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/layouts/header.css">
+    <link rel="stylesheet" href="assets/css/layouts/menu.css">
+    <link rel="stylesheet" href="assets/css/modules/search.css">
     <link rel="stylesheet" href="assets/css/modules/code.css">
     <link rel="stylesheet" href="assets/css/modules/buttons.css">
     <link rel="stylesheet" href="assets/css/modules/input.css">
@@ -14,6 +17,59 @@
     <link rel="stylesheet" href="assets/css/modules/card.css">
 </head>
 <body>
+
+    <!-- Layout: Header -->
+    <header class="header container">
+
+        <!-- Logo -->
+        <a href="#" class="header__logo"><img src="assets/img/logo.svg" alt="Logo do Alura Dev"></a>
+        
+        <!-- Module: Search -->
+        <section class="search" id="pageSearch">
+            <a href="#search-fade"><img src="assets/img/icons/search.svg" alt="Ícone do Busca" class="header__icon icon--search"></a>
+            <div class="search search--fade" id="search-fade">
+                <div class="search__box">
+                    <input class="input input--search" type="search" name="search" placeholder="Busque por algo" aria-label="Busque por algo">
+                    <a href="#" ><span class="header__icon search__close"></span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layout: Menu -->
+        <nav class="menu" id="pageMenu">
+            <a href="#menu-fade"><img src="assets/img/icons/menu.svg" alt="Ícone do Menu" class="header__icon icon--menu"></a>
+            <div class="menu menu--fade" id="menu-fade">
+                <div class="menu__content">
+                    <ul class="list">
+                        <a href="#">
+                            <li class="item item--menu" id="active">
+                                <span class="item__icon item__icon--editor"></span>
+                                <p>Editor de código</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="item item--menu">
+                                <span class="item__icon item__icon--users"></span>
+                                <p>Comunidade</p>
+                            </li>
+                          </a>
+                    </ul>
+                    <hr class="separator">
+                    <ul class="list">
+                        <a href="#">
+                            <li class="item item--profile">
+                                <span class="item__icon item__icon--profile"></span>
+                                <p>Samanta</p>  
+                            </li>
+                        </a>
+                    </ul>
+                    <a href="#" ><span class="header__icon menu__close"></span></a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
     <main>
 
         <!-- Module: Code Card -->
@@ -34,6 +90,7 @@
             <option value="2">Python</option>
             <option value="3">Java</option>
         </select>
+        <input class="input input--color" type="color" value="#6BD1FF">
 
         <!-- Module: List with Items -->
         <ul class="list">
@@ -54,7 +111,7 @@
         <!-- Module: Profile -->
         <ul class="list">
             <a href="#">
-                <li class="item item--user">
+                <li class="item item--profile">
                     <span class="item__icon item__icon--profile"></span>
                     <p>Samanta</p>  
                 </li>
@@ -62,12 +119,12 @@
         </ul>
 
         <!-- Module: Project Card -->
-        <article class="card">
-            <div class="card_content">
-                <h2 class="title card_title">Título do Projeto</h2>
+        <div class="card">
+            <article class="card_content">
+                <h2 class="card_title title">Título do Projeto</h2>
                 <p class="card_text">Essa é a descrição do meu projeto.</p>
-            </div>
-            <ul class="list card_social">
+            </article>
+            <ul class="card_social list">
                 <li class="item item--social">
                     <span class="item__icon item__icon--comment"></span>
                     <p>9</p>
@@ -76,14 +133,14 @@
                     <span class="item__icon item__icon--heart"></span>
                     <p>9</p>
                 </li>
-                <li class="item social">
-                    <div class="social_profile">
-                        <span class="item__icon item__icon--profile social_user"></span>
+                <li class="item user">
+                    <div class="user_wrapper">
+                        <span class="item__icon item__icon--profile user_icon"></span>
                         <p>@Samanta</p>
                     </div>
                  </li>
             </ul>
-        </article>
+        </div>
 
     </main>
 </body>
