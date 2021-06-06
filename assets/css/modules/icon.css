@@ -1,0 +1,99 @@
+.icon {
+    display: block; 
+
+    margin-right: 1rem;
+
+    min-width: 3rem;
+    min-height: 3rem;
+
+    border-radius: 1rem; 
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    box-sizing: border-box;
+}
+
+.icon--editor {
+    background-image: url(../../img/icons/editor.svg);
+}
+
+.icon--users {
+    background-image: url(../../img/icons/users.svg);
+}
+
+.icon--profile {
+    background-image: url(../../img/profile.png);
+    background-size: 2rem;
+
+    margin-right: 0;
+}
+
+.icon--comment {
+    background-image: url(../../img/icons/comment.svg);
+    background-size: 2rem 1.25rem;
+
+    margin-right: 0;
+}
+
+.icon--heart {
+    background-image: url(../../img/icons/heart.svg);
+    background-size: 2rem 1.25rem;
+
+    margin-right: 0;
+}
+
+.icon--user {
+    opacity: 100%;
+
+    background-image: url(../../img/profile.png);
+    background-size: 1.5rem;
+
+    margin-right: 0;
+}
+
+.icon--menu {
+    background-image: url(../../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem 1.5rem;
+
+    min-height: 3rem;
+    min-width: 3rem;
+
+    margin-left: calc(2.25rem - 1.5rem);
+    margin-right: 0;
+
+    opacity: 100%;
+}
+
+    .icon--menu:hover {
+        background-color: var(--blue-tp-24);
+        border-radius: 0.5rem;
+    }
+
+    .icon--menu:active {
+        background-color: var(--blue-tp-64);
+        border-radius: 0.5rem;
+    }
+
+.icon--search {
+    background-image: url(../../img/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem 1.5rem;
+    
+    min-height: 3rem;
+    min-width: 3rem;
+    
+    margin-left: calc(2.25rem - 1.5rem);
+    margin-right: 0;
+    padding-left: 2.25rem;
+}
+
+.icon--close {
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    padding-left: 2.25rem;
+}
