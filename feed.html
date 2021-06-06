@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed | AluraDev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/modules/input.css">
+    <link rel="stylesheet" href="assets/css/modules/item.css">
+    <link rel="stylesheet" href="assets/css/modules/icon.css">
+    <link rel="stylesheet" href="assets/css/modules/search.css">
+    <link rel="stylesheet" href="assets/css/layouts/header.css">
+    <link rel="stylesheet" href="assets/css/layouts/menu.css">
+    <link rel="stylesheet" href="assets/css/modules/code.css">
+    <link rel="stylesheet" href="assets/css/layouts/editor.css">
+    <link rel="stylesheet" href="assets/css/modules/card.css">
+    <link rel="stylesheet" href="assets/css/layouts/post.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header container">
+        <!-- Logo Start -->
+        <a href="#" class="header__logo">
+            <img src="assets/img/logo.svg" alt="Logo do Alura Dev">
+        </a>
+        <!-- Logo End -->
+        <!-- Search Start -->
+        <section class="search" id="pageSearch">
+            <a href="#search-fade">
+                <span class="header__icon icon--search"></span>
+            </a>
+            <div class="search search--fade" id="search-fade">
+                <div class="search__box">
+                    <input class="input input--search" type="search" name="search" placeholder="Busque por algo" aria-label="Busque por algo">
+                    <a href="#" ><span class="icon--close search__close"></span></a>
+                </div>
+            </div>
+        </section>
+        <!-- Search End -->
+        <!-- Menu Start -->
+        <nav class="menu" id="pageMenu">
+            <a href="#menu-fade">
+                <span class="icon icon--menu"></span>
+            </a>
+            <div class="menu menu--fade" id="menu-fade">
+                <div class="menu__content">
+                    <ul class="list">
+                        <a href="index.html">
+                            <li class="item item--menu">
+                                <span class="icon icon--editor"></span>
+                                <p>Editor de código</p>
+                            </li>
+                        </a>
+                        <a href="feed.html">
+                            <li class="item item--menu" id="active">
+                                <span class="icon icon--users"></span>
+                                <p>Comunidade</p>
+                            </li>
+                          </a>
+                    </ul>
+                    <hr class="separator">
+                    <ul class="list">
+                        <a href="#">
+                            <li class="item item--profile">
+                                <span class="icon icon--profile"></span>
+                                <p>Samanta</p>  
+                            </li>
+                        </a>
+                    </ul>
+                    <a href="#" ><span class="icon--close menu__close"></span></a>
+                </div>
+            </div>
+        </nav>
+    <!-- Menu End -->
+    </header>
+    <!-- Header End-->
+    <!-- Main Start -->
+    <main>
+    <!-- Feed Start -->
+        <!-- Post #1 Mock Start -->
+        <section class="post container">
+            <div class="post__wrapper">
+                <!-- Code Start -->
+                <div class="post__code code-card">
+                    <textarea name="codeEditor" class="code-card__input" cols="30" rows="7" disabled oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'">const muatatedArray = ['a','b','c','d','e'];
+                        muatatedArray.splice(2,1);
+                        console.log(muatatedArray);</textarea>
+                </div> 
+                <!-- Code End -->
+                <!-- Card Start -->
+                <div class="post__card">
+                    <article class="card__content">
+                        <h2 class="card__title title">Título do Projeto</h2>
+                        <p class="card__text">Essa é a descrição do meu projeto.</p>
+                    </article>
+                    <ul class="card__social list">
+                        <li class="item item--social">
+                            <span class="icon icon--comment"></span>
+                            <p>9</p>
+                        </li>
+                        <li class="item item--social">
+                            <span class="icon icon--heart"></span>
+                            <p>9</p>
+                        </li>
+                        <li class="item user">
+                            <div class="user__wrapper">
+                                <span class="icon icon--user"></span>
+                                <p>@Samanta</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Card End -->
+            </div>
+        </section>
+        <!-- Post #1 Mock End -->
+        <!-- Post #2 Mock Start -->
+        <section class="post container">
+            <div class="post__wrapper">
+                <!-- Code Start -->
+                <div class="post__code code-card code-card--alternative">
+                    <textarea name="codeEditor" class="code-card__input" cols="30" rows="13" disabled oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'">function copyToClipboard() {
+                        const copyText = document.getElementById("myInput");
+                        copyText.select();
+                        document.execCommand("copy");  
+
+}</textarea>
+                </div> 
+                <!-- Code End -->
+                <!-- Card Start -->
+                <div class="post__card">
+                    <article class="card__content">
+                        <h2 class="card__title title">Título do Projeto</h2>
+                        <p class="card__text">Essa é a descrição do meu projeto.</p>
+                    </article>
+                    <ul class="card__social list">
+                        <li class="item item--social">
+                            <span class="icon icon--comment"></span>
+                            <p>9</p>
+                        </li>
+                        <li class="item item--social">
+                            <span class="icon icon--heart"></span>
+                            <p>9</p>
+                        </li>
+                        <li class="item user">
+                            <div class="user__wrapper">
+                                <span class="icon icon--user"></span>
+                                <p>@Samanta</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <!-- Card End -->
+            </div>
+         <!-- Post #2 Mock End -->
+        </section>
+    </main>
+    <!-- Main End-->
+</body>
+</html>

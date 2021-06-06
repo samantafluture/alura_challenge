@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AluraDev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/modules/input.css">
+    <link rel="stylesheet" href="assets/css/modules/item.css">
+    <link rel="stylesheet" href="assets/css/modules/icon.css">
+    <link rel="stylesheet" href="assets/css/modules/search.css">
+    <link rel="stylesheet" href="assets/css/layouts/header.css">
+    <link rel="stylesheet" href="assets/css/layouts/menu.css">
+    <link rel="stylesheet" href="assets/css/modules/code.css">
+    <link rel="stylesheet" href="assets/css/modules/buttons.css">
+    <link rel="stylesheet" href="assets/css/layouts/editor.css">
+    <link rel="stylesheet" href="assets/css/layouts/form.css">
+</head>
+<body>
+     <!-- Header Start -->
+     <header class="header container">
+        <!-- Logo Start -->
+        <a href="#" class="header__logo">
+            <img src="assets/img/logo.svg" alt="Logo do Alura Dev">
+        </a>
+        <!-- Logo End -->
+        <!-- Search Start -->
+        <section class="search" id="pageSearch">
+            <a href="#search-fade">
+                <span class="header__icon icon--search"></span>
+            </a>
+            <div class="search search--fade" id="search-fade">
+                <div class="search__box">
+                    <input class="input input--search" type="search" name="search" placeholder="Busque por algo" aria-label="Busque por algo">
+                    <a href="#" ><span class="icon--close search__close"></span></a>
+                </div>
+            </div>
+        </section>
+        <!-- Search End -->
+        <!-- Menu Start -->
+        <nav class="menu" id="pageMenu">
+            <a href="#menu-fade">
+                <span class="icon icon--menu"></span>
+            </a>
+            <div class="menu menu--fade" id="menu-fade">
+                <div class="menu__content">
+                    <ul class="list">
+                        <a href="index.html">
+                            <li class="item item--menu" id="active">
+                                <span class="icon icon--editor"></span>
+                                <p>Editor de código</p>
+                            </li>
+                        </a>
+                        <a href="feed.html">
+                            <li class="item item--menu">
+                                <span class="icon icon--users"></span>
+                                <p>Comunidade</p>
+                            </li>
+                          </a>
+                    </ul>
+                    <hr class="separator">
+                    <ul class="list">
+                        <a href="#">
+                            <li class="item item--profile">
+                                <span class="icon icon--profile"></span>
+                                <p>Samanta</p>  
+                            </li>
+                        </a>
+                    </ul>
+                    <a href="#" ><span class="icon--close menu__close"></span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu End -->
+    </header>
+    <!-- Header End-->
+    <!-- Main Start -->
+    <main>
+        <!-- Editor Start -->
+        <section class="editor container">
+            <div class="editor__bg code-card">
+                <textarea name="codeEditor" class="editor__code code-card__input" cols="30" rows="10" placeholder="Digite seu código" aria-label="Digite seu código" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'"></textarea>
+            </div> 
+            <button class="button button--outlined editor__btn">Visualizar com o highlight</button>
+        </section>
+        <!-- Editor End -->
+        <!-- Form Start -->
+        <fieldset class="form container">
+            <h2 for="" class="title--sb form__title">Seu Projeto</h2>
+            <input type="text" name="title" class="input form__input" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
+            <textarea name="description" class="input input--description form__input" cols="30" rows="5" placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'"></textarea>
+            <h2 for="" class="title--sb form__title">Personalização</h2>
+            <select name="language" class="input form__input">
+                <option selected value="1">JavaScript</option>
+                <option value="2">Python</option>
+                <option value="3">Java</option>
+            </select>
+            <input class="input input--color form__input" type="color" value="#6BD1FF">
+            <button class="button button--filled form__btn">Salvar projeto</button>
+        </fieldset>
+        <!-- Form End -->
+    </main>
+    <!-- Main End -->
+</body>
+</html>
