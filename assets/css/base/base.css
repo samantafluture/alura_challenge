@@ -1,0 +1,63 @@
+@import url(_variaveis.css);
+@import url(_reset.css);
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
+    color: var(--white);
+    
+    background-color: var(--blue-dark);
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+p {
+    color: var(--white);
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+hr.separator {
+    border: 0.25px solid var(--white);
+    opacity: 8%;
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.title{
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
+}
+
+.title--sb {
+    font-size: var(--font-size-sb);
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-sb);
+
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    display: block;
+}
+
+.align--left {
+    text-align: left;
+}
+
+.align--center {
+    text-align: center;
+}
+
+#active {
+    opacity: 100%;
+}
+
