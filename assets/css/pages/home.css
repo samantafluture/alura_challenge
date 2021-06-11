@@ -1,9 +1,0 @@
-@media (min-width: 1025px) {
-    .home {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-}
