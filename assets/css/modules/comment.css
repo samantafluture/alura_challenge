@@ -1,0 +1,52 @@
+.comment-box {
+    display: flex; 
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.comment-box__title {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    align-self: flex-start;
+}
+
+.comment-box__item {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+
+    margin-bottom: 0.5rem;
+}
+
+.comment-box__icon {
+    background-image: url(../../img/profile.png);
+    background-size: 2rem;
+    background-position: left;
+
+    margin-right: 0;
+}
+
+.comment-box__close {
+    background-image: url(../../img/icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.75rem;
+    opacity: 70%;
+
+    display: block; 
+
+    min-width: 1rem;
+    min-height: 1rem;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+
+    .comment-box__close:hover {
+        opacity: 100%;
+    }
+
+    .comment-box__close:active {
+        opacity: 100%;
+    }
