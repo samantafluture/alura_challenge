@@ -1,0 +1,43 @@
+@media (min-width: 1025px) {
+    .site {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 100px auto;  
+        justify-items: stretch;
+        align-items: start;
+        gap: 1rem 0.5rem;
+
+    }
+
+    .site__header {
+        grid-column-start: span 3;
+    }
+
+    .site__menu {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: start;
+    }
+    
+    .site__feed {
+        grid-row: 2 / 3;
+        grid-column: 2 / span 2;
+        justify-self: end;
+
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .feed {
+        width: 100%;
+        display: grid;
+        /* grid-template-areas: 
+          "post"
+          "post"
+          "post"
+          "post"; */
+        grid-template-columns: 50% 50%;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+    
+}
