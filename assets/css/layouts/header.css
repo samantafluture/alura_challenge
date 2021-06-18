@@ -1,0 +1,113 @@
+.header {
+<<<<<<< HEAD
+    align-items: center;
+    
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 3rem;
+    max-height: 3rem;
+    
+    width: 100%;
+=======
+    box-sizing: border-box;
+    
+    margin-top: 1.5rem;
+    margin-bottom: 3.184rem;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+}
+
+.header__logo {
+    flex-grow: 2;
+<<<<<<< HEAD
+}
+=======
+} 
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+
+.header__profile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        flex-grow: 0;
+    }
+
+    .header__profile {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1025px) {
+<<<<<<< HEAD
+    .header__logo {
+        min-width: 12rem;
+    }
+
+        .header__logo > *{
+            height: 34.05px;
+            width: 145px;
+        }
+    
+    .header__profile {
+        align-self: center;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        margin-top: 1rem;
+        min-width: 15rem;
+    }
+
+    .header__search{
+        margin-left: 2rem;
+        margin-right: 2rem;
+=======
+    .header {
+        margin-top: 0.5rem;
+
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr;  
+        justify-items: stretch;
+        align-items: center;
+        gap: 1rem 1rem;
+
+       
+    }
+
+    .header__logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+
+        justify-self: start;
+    }
+
+    .header__search {
+        grid-column: 2 / 3;
+        grid-row: 1 / 1;
+
+        /* justify-self: center;
+        align-self: center; */
+    }
+    
+    .header__profile {
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+        justify-self: end;
+
+        display: flex;
+        padding-top: 1rem;
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    }
+}

@@ -1,0 +1,126 @@
+.list {
+    display: flex; 
+    flex-direction: column;
+    align-items: end;
+}
+
+.list--comment {
+    margin-top: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.item {
+<<<<<<< HEAD
+    cursor: pointer;
+    
+=======
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    opacity: 36%;
+<<<<<<< HEAD
+=======
+
+    cursor: pointer;
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+}
+
+    .item--menu:hover {
+        opacity: 72%;
+    } 
+
+    .item--menu:active {
+        opacity: 100%;
+    }
+
+.item--profile {
+<<<<<<< HEAD
+    box-sizing: border-box;
+    
+    max-height: 3rem;
+    
+    opacity: 100%;
+    
+    padding: 0.5rem;
+}
+
+    .item--profile:hover {
+        background-color: var(--white-tp-16);
+        
+        border-radius: 0.5rem;
+        
+        opacity: 100%;
+    }
+
+.item--social {
+    box-sizing: border-box;
+    
+    min-height: 2.5rem;
+    min-width: 3rem;
+    
+    opacity: 100%;
+=======
+    opacity: 100%;
+
+    min-height: 3.5rem;
+    min-width: 6.625rem;
+    padding-right: 0.75rem;
+
+    box-sizing: border-box;
+
+}
+
+    .item--profile:hover {
+        opacity: 100%;
+
+        background-color: var(--white-tp-16);
+        border-radius: 0.5rem;
+    }
+
+.item--social {
+    opacity: 100%;
+    
+    min-height: 2.5rem;
+    min-width: 3rem;
+    padding-right: 0.9rem;
+    
+    box-sizing: border-box;
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+}
+
+    .item--social:nth-child(even) {
+        padding-right: 0;
+    }
+
+    .item--social:hover {
+<<<<<<< HEAD
+        background-color: var(--white-tp-16);
+        
+        border-radius: 1rem;
+        
+        opacity: 100%;
+    }
+
+    .item--social:active {
+        background-color: var(--white-tp-24);
+        
+        border-radius: 1rem;
+        
+        opacity: 100%;
+=======
+        opacity: 100%;
+
+        background-color: var(--white-tp-16);
+        border-radius: 1rem;
+    }
+
+    .item--social:active {
+        opacity: 100%;
+
+        background-color: var(--white-tp-24);
+        border-radius: 1rem;
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    }

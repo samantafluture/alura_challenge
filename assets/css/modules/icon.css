@@ -1,0 +1,167 @@
+.icon {
+<<<<<<< HEAD
+=======
+    display: block; 
+
+    margin-right: 1rem;
+
+    min-width: 3rem;
+    min-height: 3rem;
+
+    border-radius: 1rem; 
+
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+<<<<<<< HEAD
+    border-radius: 1rem; 
+
+    box-sizing: border-box;
+    
+    display: block; 
+
+    min-width: 3rem;
+    min-height: 3rem;
+=======
+    box-sizing: border-box;
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+}
+
+.icon--editor {
+    background-image: url(../../img/icons/editor.svg);
+<<<<<<< HEAD
+
+    margin-right: 1rem;
+=======
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+}
+
+.icon--users {
+    background-image: url(../../img/icons/users.svg);
+<<<<<<< HEAD
+
+    margin-right: 1rem;
+=======
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+}
+
+.icon--profile {
+    background-image: url(../../img/profile.png);
+    background-size: 2rem;
+
+    margin-right: 0;
+}
+
+.icon--comment {
+    background-image: url(../../img/icons/comment.svg);
+    background-size: 2rem 1.25rem;
+
+    margin-right: 0;
+}
+
+.icon--heart {
+    background-image: url(../../img/icons/heart.svg);
+    background-size: 2rem 1.25rem;
+
+    margin-right: 0;
+}
+
+<<<<<<< HEAD
+=======
+    /* .icon--heart:active {
+        background-image: url(../../img/icons/heart-red.svg);
+        background-size: 2rem 1.25rem;
+
+        margin-right: 0;
+    } */
+
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+.icon--heart-liked {
+    background-image: url(../../img/icons/heart-red.svg);
+    background-size: 2rem 1.25rem;
+
+    margin-right: 0;
+}
+
+.icon--user {
+<<<<<<< HEAD
+=======
+    opacity: 100%;
+
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    background-image: url(../../img/profile.png);
+    background-size: 1.5rem;
+
+    margin-right: 0;
+<<<<<<< HEAD
+
+    opacity: 100%;
+=======
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+}
+
+.icon--menu {
+    background-image: url(../../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem 1.5rem;
+
+    min-height: 3rem;
+    min-width: 3rem;
+
+<<<<<<< HEAD
+=======
+    margin-left: calc(2.25rem - 1.5rem);
+    margin-right: 0;
+
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    opacity: 100%;
+}
+
+    .icon--menu:hover {
+        background-color: var(--blue-tp-24);
+<<<<<<< HEAD
+        
+=======
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+        border-radius: 0.5rem;
+    }
+
+    .icon--menu:active {
+        background-color: var(--blue-tp-64);
+<<<<<<< HEAD
+        
+=======
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+        border-radius: 0.5rem;
+    }
+
+.icon--search {
+    background-image: url(../../img/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem 1.5rem;
+    
+    min-height: 3rem;
+    min-width: 3rem;
+    
+<<<<<<< HEAD
+    margin-right: 1rem;
+=======
+    margin-left: calc(2.25rem - 1.5rem);
+    margin-right: 0;
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    padding-left: 2.25rem;
+}
+
+.icon--close {
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 215dc1338c3268c9226dd5546e9b34bdfdc264f5
+    padding-left: 2.25rem;
+}
