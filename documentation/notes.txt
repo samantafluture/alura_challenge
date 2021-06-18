@@ -1,0 +1,82 @@
+Organização & Tarefas
+
+> Modules
+
+code-card.css [ok]
+button.css [ok]
+input.css [ok]
+item.css [ok]
+project-card.css [ok]
+
+> Layout 
+
+header.css [ok]
+menu.css [ok]
+
+editor.css [ok] 
+form.css [ok]
+post.css [ok]
+
+> Pages
+
+index.html [ok]
+feed.html [ok]
+
+> Media queries (tablet e desktop)
+
+tablet [ok]
+desktop [ok]
+
+> JS
+
+básico: 
+
+color picker [ok]
+highlight [ok]
+editor de código altura automática [ok]
+coração ativo vermelho e contagem de likes [ok]
+menu mobile [ok]
+
+avançado:
+
+fazer projeto aparecer na comunidade [ok]
+salvar projeto [ok]
+função de curtir e comentar [ok]
+exportação código png, jpg, svg, extensão escolhida etc [ok]
+salvar curtidas e comentários no localstorage
+pg de style guide
+
+finalização:
+
+colocar app no ar 
+documentação no github
+
+além:
+
+editar e deletar posts
+escolher tema highlight
+postar nas redes sociais
+fazer login com redes sociais
+funcionalidade de busca
+pag de perfil
+
+> Refatoração css
+
+estilizar o select options
+menu mobile
+
+> Bugs
+
+- salvar curtidas e comentários no localstorage
+- unshift() em vez de push()
+    - adiciona item no início da array
+- usar exemplo da To Do app pra aplicar o delete no local storage
+    - botão delete no post e no comentário 
+    - gerar por data
+    - deletar por id
+- código html bug
+    - tentar retirar tag hljs antes de adicionar código no local storage
+- implementar live search usando exemplo
+- colocar mais opções de linguagem
+- adicionar opção de temas 
+- compartilhar imagem nas redes sociais 

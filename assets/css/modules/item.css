@@ -1,18 +1,23 @@
 .list {
     display: flex; 
     flex-direction: column;
-    align-items: flex-start;
+    align-items: end;
+}
+
+.list--comment {
+    margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .item {
+    cursor: pointer;
+    
     display: flex;
     align-items: center;
 
     margin-bottom: 1rem;
 
     opacity: 36%;
-
-    cursor: pointer;
 }
 
     .item--menu:hover {
@@ -23,90 +28,49 @@
         opacity: 100%;
     }
 
-.item--user {
-    opacity: 100%;
-
-    min-height: 3.5rem;
-    min-width: 6.625rem;
-    padding-right: 0.75rem;
-
+.item--profile {
     box-sizing: border-box;
+    
+    max-height: 3rem;
+    
+    opacity: 100%;
+    
+    padding: 0.5rem;
 }
 
-    .item--user:hover {
-        opacity: 100%;
-
+    .item--profile:hover {
         background-color: var(--white-tp-16);
+        
         border-radius: 0.5rem;
+        
+        opacity: 100%;
     }
 
 .item--social {
-    opacity: 100%;
+    box-sizing: border-box;
     
     min-height: 2.5rem;
     min-width: 3rem;
-    padding-right: 0.9rem;
     
-    box-sizing: border-box;
+    opacity: 100%;
 }
 
-    .item--social:hover {
-        opacity: 100%;
+    .item--social:nth-child(even) {
+        padding-right: 0;
+    }
 
+    .item--social:hover {
         background-color: var(--white-tp-16);
+        
         border-radius: 1rem;
+        
+        opacity: 100%;
     }
 
     .item--social:active {
-        opacity: 100%;
-
         background-color: var(--white-tp-24);
+        
         border-radius: 1rem;
+        
+        opacity: 100%;
     }
-
-
-.item__icon {
-    display: block; /* span é inline por natureza */
-
-    margin-right: 1rem;
-
-    min-width: 3rem;
-    min-height: 3rem;
-
-    border-radius: 1rem; 
-
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    box-sizing: border-box;
-}
-
-.item__icon--editor {
-    background-image: url(../../img/icons/editor.svg);
-}
-
-.item__icon--users {
-    background-image: url(../../img/icons/users.svg);
-}
-
-.item__icon--profile {
-    background-image: url(../../img/profile.png);
-    background-size: 2rem;
-
-    margin-right: 0;
-}
-
-.item__icon--comment {
-    background-image: url(../../img/icons/comment.svg);
-    background-size: 2rem 1.25rem;
-
-    margin-right: 0;
-}
-
-.item__icon--heart {
-    background-image: url(../../img/icons/heart.svg);
-    background-size: 2rem 1.25rem;
-
-    margin-right: 0;
-}

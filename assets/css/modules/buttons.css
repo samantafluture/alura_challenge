@@ -1,17 +1,20 @@
 .button {
+    border-radius: 0.5rem;
+    border: none;
+    
+    box-sizing: border-box;
+
+    cursor: pointer;
+    
     font-family: inherit;
     font-weight: inherit;
     line-height: inherit;
     text-align: center;
-
-    border-radius: 0.5rem;
-    border: none;
+    white-space:nowrap;
 
     padding: 1rem 4.68rem;  
-    width: 100%;
-    box-sizing: border-box;
 
-    cursor: pointer;
+    width: 100%;    
 }
 
 .button--outlined {
@@ -51,3 +54,7 @@
     .button--filled:focus {
         background-color: var(--blue-100);
     }
+
+.button--comment {
+    margin-bottom: 1rem;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | AluraDev</title>
+    <title>Comunidade | AluraDev</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base/base.css">
@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="assets/css/modules/item.css">
     <link rel="stylesheet" href="assets/css/modules/icon.css">
     <link rel="stylesheet" href="assets/css/modules/search.css">
-    <link rel="stylesheet" href="assets/css/modules/code.css">
     <link rel="stylesheet" href="assets/css/modules/buttons.css">
     <link rel="stylesheet" href="assets/css/layouts/comment.css">
     <link rel="stylesheet" href="assets/css/layouts/header.css">
     <link rel="stylesheet" href="assets/css/layouts/menu.css">
     <link rel="stylesheet" href="assets/css/layouts/editor.css">
+    <link rel="stylesheet" href="assets/css/layouts/post.css">
+    <link rel="stylesheet" href="assets/css/modules/code.css">
+    <link rel="stylesheet" href="assets/css/modules/card.css">
     <link rel="stylesheet" href="assets/css/layouts/form.css">
-    <link rel="stylesheet" href="assets/css/layouts/export.css">
-    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <link rel="stylesheet" href="assets/css/pages/feed.css">
     <link rel="stylesheet" href="assets/css/highlight/dracula.css">
 </head>
 <body class="site" spellcheck="false">
@@ -92,72 +93,70 @@
         <!-- Profile Desktop End -->
     </header>
     <!-- Header End-->
-        <div class="site__content">
-            <!-- Menu Sidebar Start -->
-            <nav class="site__menu menu--sidebar menu">  
-                <ul class="list">
-                    <h2 for="" class="title--sb form__title">Menu</h2>
-                    <a href="index.html">
-                        <li class="item item--menu" id="active">
-                            <span class="icon icon--editor"></span>
-                            <p>Editor de código</p>
-                        </li>
-                    </a>
-                    <a href="feed.html">
-                        <li class="item item--menu">
-                            <span class="icon icon--users"></span>
-                            <p>Comunidade</p>
-                        </li>
-                    </a>
-                </ul>
-            </nav>
-            <!-- Menu Sidebar End -->
-            <!-- Editor Start -->
-            <section class="site__editor editor">
-                <div id="screenshot">
-                    <div class="editor__bg code-card" id="bgColor">
-                        <div class="code-card__buttons"></div>
-                        <code class="editor__code code-card__input input--code hljs" contenteditable="true" aria-label="Editor de código" style="white-space:pre-wrap;"></code>
-                    </div>
-                </div>
-                <button class="editor__btn button button--outlined">Visualizar com o highlight</button>
-                <!-- Export Start -->
-                <form class="export" action="#" method="GET">
-                    <h2 for="" class="export__title title--sb">Exportar</h2>
-                    <input data-export="name" type="text" name="title" class="export__name input" placeholder="Nome do arquivo" aria-label="Nome do arquivo">
-                    <select data-export="format" name="arquivo" class="export__type input">
-                        <option class="export__opt" value="png">PNG</option>
-                        <option class="export__opt" value="jpg">JPG</option>
-                    </select>
-                    <button data-btn="export" class="export__btn button button--outlined" id="capture">Exportar</button>
-                </form>
-                <!-- Export End -->
-            </section>
-            <!-- Editor End -->
-            <!-- Form Start -->
-            <form class="site__form form" method="GET" action="feed.html">
-                <h2 for="" class="title--sb form__title">Seu Projeto</h2>
-                <input type="text" name="title" class="input input--title form__input" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" required>
-                <textarea name="description" class="input input--description form__input" cols="30" rows="4" placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'" required></textarea>
-                <h2 for="" class="title--sb form__title">Personalização</h2>
-                <select name="language" class="input form__input input--language" id="language">
-                    <option selected value="javascript">JavaScript</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="python">Python</option>
-                    <option value="ruby">Ruby</option>
-                    <option value="php">PHP</option>
-                    <option value="go">Go</option>
-                </select>
-                <input class="input input--color form__input" type="color" value="#6BD1FF" id="colorChoice">
-                <button type="submit" class="button button--filled form__btn">Salvar projeto</button>
-            </form>
-            <!-- Form End -->
+    <div class="site__content">
+        <!-- Menu Sidebar Start -->
+        <nav class="site__menu menu--sidebar menu">
+            <ul class="list">
+                <h2 for="" class="title--sb form__title">Menu</h2>
+                <a href="index.html">
+                    <li class="item item--menu">
+                        <span class="icon icon--editor"></span>
+                        <p>Editor de código</p>
+                    </li>
+                </a>
+                <a href="feed.html">
+                    <li class="item item--menu"  id="active">
+                        <span class="icon icon--users"></span>
+                        <p>Comunidade</p>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <!-- Menu Sidebar End -->
+        <!-- Feed Start -->
+        <div class="site__feed">
+            <!-- Grid Start -->
+            <div class="feed" id="feed-area">
+                <!-- Dummy Post -->
+                <!-- <section class="post container">
+                        <div class="post__wrapper">
+                            <div class="post__code code-card">
+                                <pre><code class="editor__code code-card__input input--code hljs post__code-input" contenteditable="true" aria-label="Editor de código"></code></pre>
+                            </div> 
+                            <div class="post__card">
+                            <article class="card__content">
+                                <h2 class="card__title title">Título do Projeto</h2>
+                                <p class="card__text">Essa é a descrição do meu projeto.</p>
+                            </article>
+                            <ul class="card__social list">
+                                <li class="item item--social">
+                                    <span class="icon icon--comment"></span>
+                                    <p>0</p>
+                                </li>
+                                <li class="item item--social">
+                                    <span class="icon icon--heart"></span>
+                                    <input class="input input--counter" type="number" value="0" disabled>
+                                </li>
+                                    <li class="item user">
+                                    <div class="user__wrapper">
+                                        <span class="icon icon--user"></span>
+                                        <p>@Samanta</p>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section> -->
+            </div>
+            <!-- Grid End -->
+            </div>
+        <!-- Feed End -->
     </div>
 </body>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
-<script src="/assets/js/html2canvas.min.js" defer></script>
-<script src="/assets/js/index.js"></script>
+<!-- <script src="/assets/js/index.js"></script> -->
+<script src="/assets/js/feed.js"></script>
 <script src="/assets/js/data.js" type="module"></script>
-<script src="/assets/js/export.js" type="module"></script>
+<script src="/assets/js/like.js" type="module"></script>
+<script>hljs.highlightAll();</script>
 </html>

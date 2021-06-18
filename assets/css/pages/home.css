@@ -1,0 +1,31 @@
+@media (min-width: 1025px) {
+    .site__content {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: space-between;
+    }
+
+    .site__menu {
+        flex-grow: 0;
+        
+        min-width: 12rem;
+    }
+
+    .site__editor {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 0;
+
+        width: 100%;
+    }
+
+    .site__form {
+        flex-grow: 0;
+        
+        width: 15rem;
+    }
+
+} 

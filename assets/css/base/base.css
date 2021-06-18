@@ -9,15 +9,20 @@ body {
     color: var(--white);
     
     background-color: var(--blue-dark);
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 2rem 2rem;
 }
 
-textarea::-webkit-scrollbar {
-    display: none;
+p {
+    color: var(--white);
 }
 
-.container {
-    padding-right: 1rem;
-    padding-left: 1rem;
+hr.separator {
+    border: 0.25px solid var(--white);
+    opacity: 8%;
+    width: 100%;
 }
 
 .title{
@@ -30,12 +35,25 @@ textarea::-webkit-scrollbar {
     font-size: var(--font-size-sb);
     font-weight: var(--font-weight-body);
     line-height: var(--line-height-sb);
+
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    display: block;
 }
 
-.align--left {
-    text-align: left;
+
+#active {
+    opacity: 100%;
 }
 
-.align--center {
-    text-align: center;
+#hidden {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+} 
+
+.hidden {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
 }
