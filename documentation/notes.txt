@@ -1,0 +1,29 @@
+Organização & Tarefas
+
+> Finalização
+
+1. Refatorar
+- javascript [ok]
+
+2. Finalizar funções (local storage)
+- deletar posts (incluir ícone) [ok]
+- curtir [fazer]
+- criar e deleter comentários (melhorar css: nome do usuário, "x" de deletar) [fazer]
+- menu mobile (com javascript)
+- validação do formulário (com javascript, html e css)
+    https://webdesign.tutsplus.com/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145
+
+3. Novas funções
+- mensagem de página vazia
+- opção de mais linguagens
+- opção de escolher temas highlight.js
+- login github 
+
+4. Deploy
+- mudar tudo para inglês
+- colocar no ar (github pages?)
+- melhorar o readme.md
+
+6. Bug 
+- highlight html
+

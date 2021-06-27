@@ -1,0 +1,23 @@
+.editor {
+    position: relative;
+}
+
+.editor__bg {
+    margin-bottom: 2rem;
+}   
+
+.editor__btn {
+    margin-bottom: 1.5rem;
+}
+
+.editor__code {
+    min-height: 15rem;
+}
+
+@media (min-width: 1025px) {
+    .editor {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+}
