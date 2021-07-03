@@ -1,4 +1,46 @@
+.feed__text {
+    background-color: var(--black-tp-16);
+
+    border-radius: 0.5rem;
+
+    padding: 5rem;
+
+    grid-column: span 3;
+
+    font-size: var(--font-size-title);
+    line-height: 2rem;
+    text-align: center;
+
+    overflow: hidden;
+    
+}
+
+.feed__text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.feed__text li{
+    background-color: var(--white-tp-8);
+
+    border-radius: 0.5rem;
+
+    margin-top: 1rem;
+    padding: 0.75rem;
+
+    justify-content: center;
+
+    width: fit-content;
+}
+
 @media (min-width: 1025px) {
+    .feed__text {
+        margin-left: 2rem;
+    }
+    
     .site__content {
         display: grid;
         

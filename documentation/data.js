@@ -140,4 +140,3 @@ function getFromLocalStorage() {
   
   // initially get everything from localStorage
   getFromLocalStorage();
-

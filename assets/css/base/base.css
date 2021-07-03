@@ -57,3 +57,18 @@ hr.separator {
     display: none;
     visibility: hidden;
 }
+
+.disabled {
+    opacity: .2;
+}
+
+/* input:required:invalid, textarea:required:invalid {
+    background-image: url(../../img/icons/invalid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  input:required:valid, textarea:required:valid {
+    background-image: url(../../img/icons/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  } */

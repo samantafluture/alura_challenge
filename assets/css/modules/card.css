@@ -1,12 +1,10 @@
 .card {
     background-color: var(--black-tp-24);
-
     border-radius: 0.5rem;
 }
 
 .card__content {
     padding: 1.5rem;
-
     min-height: 5.5rem;
 }
 
@@ -23,6 +21,21 @@
     color: var(--white-tp-80);
     
     display: block;
+}
+
+.card__language {
+    display: block;
+    
+    background-color: var(--white-tp-16);
+
+    border-radius: 0.5rem;
+
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    text-transform: capitalize;
+
+    width: fit-content;
 }
 
 .card__social {

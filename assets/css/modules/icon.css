@@ -53,6 +53,13 @@
     margin-right: 0;
 }
 
+.icon--remove {
+    background-image: url(../../img/icons/trash.svg);
+    background-size: 2rem 1.25rem;
+
+    margin-right: 0;
+}
+
 .icon--user {
     background-image: url(../../img/profile.png);
     background-size: 1.5rem;

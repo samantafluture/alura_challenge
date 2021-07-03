@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | AluraDev</title>
-    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="../alura-dev/assets/img/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/modules/input.css">
@@ -114,13 +114,13 @@
             <!-- Menu Sidebar End -->
             <!-- Editor Start -->
             <section class="site__editor editor">
-                <div id="screenshot">
-                    <div class="editor__bg code-card" id="bgColor">
-                        <div class="code-card__buttons"></div>
-                        <code class="editor__code code-card__input input--code hljs" contenteditable="true" aria-label="Editor de código" style="white-space:pre-wrap;"></code>
+                <div data-export="screenshot">
+                    <img src="../alura-dev/assets/img/icons/mac-buttons.svg" alt="" class="code-card__screenshot">
+                    <div class="editor__bg code-card" data-card-code>
+                        <code class="editor__code code-card__input input--code input--required hljs" contenteditable="true" aria-label="Editor de código" style="white-space:pre-wrap;" required data-form-code></code>
                     </div>
                 </div>
-                <button class="editor__btn button button--outlined">Visualizar com o highlight</button>
+                <button class="editor__btn button button--outlined" data-card-btn>Visualizar com o highlight</button>
                 <!-- Export Start -->
                 <form class="export" action="#" method="GET">
                     <h2 for="" class="export__title title--sb">Exportar</h2>
@@ -129,35 +129,45 @@
                         <option class="export__opt" value="png">PNG</option>
                         <option class="export__opt" value="jpg">JPG</option>
                     </select>
-                    <button data-btn="export" class="export__btn button button--outlined" id="capture">Exportar</button>
+                    <button data-btn="export" class="export__btn button button--outlined">Exportar</button>
                 </form>
                 <!-- Export End -->
             </section>
             <!-- Editor End -->
             <!-- Form Start -->
-            <form class="site__form form" method="GET" action="feed.html">
+            <form class="site__form form" method="GET" action="feed.html"  data-form>
                 <h2 for="" class="title--sb form__title">Seu Projeto</h2>
-                <input type="text" name="title" class="input input--title form__input" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" required>
-                <textarea name="description" class="input input--description form__input" cols="30" rows="4" placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'" required></textarea>
+                <input type="text" name="title" class="input input--title form__input input--required" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" required data-form-title>
+                <textarea name="description" class="input input--description form__input input--required" cols="30" rows="4" placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'" required data-form-description></textarea>
                 <h2 for="" class="title--sb form__title">Personalização</h2>
-                <select name="language" class="input form__input input--language" id="language">
+                <select name="language" class="input form__input input--language" id="language" data-form-language>
                     <option selected value="javascript">JavaScript</option>
-                    <option value="html">HTML</option>
+                    <option value="bash">Bash</option>
                     <option value="css">CSS</option>
+                    <option value="cpp">C++</option>
+                    <option value="csharp">C#</option>
+                    <option value="go">Go</option>
+                    <option value="html">HTML</option>
+                    <option value="java">Java</option>
+                    <option value="json">JSON</option>
                     <option value="python">Python</option>
                     <option value="ruby">Ruby</option>
-                    <option value="php">PHP</option>
-                    <option value="go">Go</option>
+                    <option value="rust">Rust</option>
+                    <option value="sql">SQL</option>
+                    <option value="swift">Swift</option>
+                    <option value="xml">XML</option>
                 </select>
-                <input class="input input--color form__input" type="color" value="#6BD1FF" id="colorChoice">
-                <button type="submit" class="button button--filled form__btn">Salvar projeto</button>
+                <input class="input input--color form__input" type="color" value="#6BD1FF" data-form-color>
+                <button type="submit" class="button button--filled form__btn" data-form-btn>Salvar projeto</button>
             </form>
             <!-- Form End -->
     </div>
 </body>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
-<script src="/assets/js/html2canvas.min.js" defer></script>
-<script src="/assets/js/index.js"></script>
-<script src="/assets/js/data.js" type="module"></script>
-<script src="/assets/js/export.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+<script src="../alura-dev/assets/js/components/createProject.js" type="module"></script> 
+<script src="../alura-dev/assets/js/components/changeColor.js" type="module"></script>
+<script src="../alura-dev/assets/js/components/changeLanguage.js" type="module"></script> 
+<script src="../alura-dev/assets/js/components/submitForm.js"></script>
+<script src="../alura-dev/assets/js/components/exportProject.js" type="module"></script>
 </html>

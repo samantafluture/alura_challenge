@@ -1,2 +1,4 @@
 # Projeto Alura Challange
-## Primeira semana
+- HTML
+- CSS
+- JS

@@ -1,82 +1,28 @@
 Organização & Tarefas
 
-> Modules
+> Finalização
 
-code-card.css [ok]
-button.css [ok]
-input.css [ok]
-item.css [ok]
-project-card.css [ok]
+1. Refatorar
+- javascript [ok]
 
-> Layout 
+2. Finalizar funções
+- deletar posts (incluir ícone) [ok]
+- menu mobile (com javascript)
+- validação do formulário (com javascript, html e css)
+    https://webdesign.tutsplus.com/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145
+- curtir gravado no localstorage [fazer]
+- criar e deleter comentários gravados no localstorage [fazer]
 
-header.css [ok]
-menu.css [ok]
+3. Novas funções
+- mensagem de página vazia
+- opção de mais linguagens
+- opção de escolher temas highlight.js
 
-editor.css [ok] 
-form.css [ok]
-post.css [ok]
+4. Deploy
+- mudar tudo para inglês
+- colocar no ar (github pages?)
+- melhorar o readme.md
 
-> Pages
+6. Bug 
+- highlight html
 
-index.html [ok]
-feed.html [ok]
-
-> Media queries (tablet e desktop)
-
-tablet [ok]
-desktop [ok]
-
-> JS
-
-básico: 
-
-color picker [ok]
-highlight [ok]
-editor de código altura automática [ok]
-coração ativo vermelho e contagem de likes [ok]
-menu mobile [ok]
-
-avançado:
-
-fazer projeto aparecer na comunidade [ok]
-salvar projeto [ok]
-função de curtir e comentar [ok]
-exportação código png, jpg, svg, extensão escolhida etc [ok]
-salvar curtidas e comentários no localstorage
-pg de style guide
-
-finalização:
-
-colocar app no ar 
-documentação no github
-
-além:
-
-editar e deletar posts
-escolher tema highlight
-postar nas redes sociais
-fazer login com redes sociais
-funcionalidade de busca
-pag de perfil
-
-> Refatoração css
-
-estilizar o select options
-menu mobile
-
-> Bugs
-
-- salvar curtidas e comentários no localstorage
-- unshift() em vez de push()
-    - adiciona item no início da array
-- usar exemplo da To Do app pra aplicar o delete no local storage
-    - botão delete no post e no comentário 
-    - gerar por data
-    - deletar por id
-- código html bug
-    - tentar retirar tag hljs antes de adicionar código no local storage
-- implementar live search usando exemplo
-- colocar mais opções de linguagem
-- adicionar opção de temas 
-- compartilhar imagem nas redes sociais 

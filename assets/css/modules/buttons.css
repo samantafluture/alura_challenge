@@ -54,6 +54,10 @@
     .button--filled:focus {
         background-color: var(--blue-100);
     }
+    
+    .button--filled:disabled {
+        opacity: .2;
+    }
 
 .button--comment {
     margin-bottom: 1rem;
