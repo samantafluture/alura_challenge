@@ -5,6 +5,7 @@ Organização & Tarefas
 1. Refatorar
 - javascript [ok]
 
+<<<<<<< HEAD
 2. Finalizar funções
 - deletar posts (incluir ícone) [ok]
 - menu mobile (com javascript)
@@ -12,11 +13,24 @@ Organização & Tarefas
     https://webdesign.tutsplus.com/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145
 - curtir gravado no localstorage [fazer]
 - criar e deleter comentários gravados no localstorage [fazer]
+=======
+2. Finalizar funções (local storage)
+- deletar posts (incluir ícone) [ok]
+- curtir [fazer]
+- criar e deleter comentários (melhorar css: nome do usuário, "x" de deletar) [fazer]
+- menu mobile (com javascript)
+- validação do formulário (com javascript, html e css)
+    https://webdesign.tutsplus.com/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
 
 3. Novas funções
 - mensagem de página vazia
 - opção de mais linguagens
 - opção de escolher temas highlight.js
+<<<<<<< HEAD
+=======
+- login github 
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
 
 4. Deploy
 - mudar tudo para inglês

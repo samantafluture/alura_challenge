@@ -117,7 +117,11 @@
                 <div data-export="screenshot">
                     <img src="../alura-dev/assets/img/icons/mac-buttons.svg" alt="" class="code-card__screenshot">
                     <div class="editor__bg code-card" data-card-code>
+<<<<<<< HEAD
                         <code class="editor__code code-card__input input--code input--required hljs" contenteditable="true" aria-label="Editor de código" style="white-space:pre-wrap;" required data-form-code></code>
+=======
+                        <code class="editor__code code-card__input input--code hljs" contenteditable="true" aria-label="Editor de código" style="white-space:pre-wrap;" data-form-code></code>
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
                     </div>
                 </div>
                 <button class="editor__btn button button--outlined" data-card-btn>Visualizar com o highlight</button>
@@ -137,6 +141,7 @@
             <!-- Form Start -->
             <form class="site__form form" method="GET" action="feed.html"  data-form>
                 <h2 for="" class="title--sb form__title">Seu Projeto</h2>
+<<<<<<< HEAD
                 <input type="text" name="title" class="input input--title form__input input--required" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" required data-form-title>
                 <textarea name="description" class="input input--description form__input input--required" cols="30" rows="4" placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'" required data-form-description></textarea>
                 <h2 for="" class="title--sb form__title">Personalização</h2>
@@ -156,6 +161,15 @@
                     <option value="sql">SQL</option>
                     <option value="swift">Swift</option>
                     <option value="xml">XML</option>
+=======
+                <input type="text" name="title" class="input input--title form__input" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" required data-form-title>
+                <textarea name="description" class="input input--description form__input" cols="30" rows="4" placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px'" required data-form-description></textarea>
+                <h2 for="" class="title--sb form__title">Personalização</h2>
+                <select name="language" class="input form__input input--language" id="language" data-form-language>
+                    <option selected value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
                 </select>
                 <input class="input input--color form__input" type="color" value="#6BD1FF" data-form-color>
                 <button type="submit" class="button button--filled form__btn" data-form-btn>Salvar projeto</button>
@@ -168,6 +182,9 @@
 <script src="../alura-dev/assets/js/components/createProject.js" type="module"></script> 
 <script src="../alura-dev/assets/js/components/changeColor.js" type="module"></script>
 <script src="../alura-dev/assets/js/components/changeLanguage.js" type="module"></script> 
+<<<<<<< HEAD
 <script src="../alura-dev/assets/js/components/submitForm.js"></script>
+=======
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
 <script src="../alura-dev/assets/js/components/exportProject.js" type="module"></script>
 </html>

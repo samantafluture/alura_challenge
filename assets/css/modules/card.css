@@ -21,6 +21,7 @@
     color: var(--white-tp-80);
     
     display: block;
+<<<<<<< HEAD
 }
 
 .card__language {
@@ -36,6 +37,8 @@
     text-transform: capitalize;
 
     width: fit-content;
+=======
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
 }
 
 .card__social {

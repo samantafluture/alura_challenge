@@ -21,7 +21,11 @@
 
 @media (min-width: 768px) {
     .export__name, .export__type, .export__btn {
+<<<<<<< HEAD
         /* margin-top: 1rem; */
+=======
+        margin-top: 1rem;
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
     
         flex-grow: 0;
     

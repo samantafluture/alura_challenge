@@ -51,6 +51,10 @@ export const createProject = (() => {
     function renderPosts(posts) {
         if(feed) {
             feed.innerHTML = '';
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
             posts.forEach(function(post) {  
                 const div = document.createElement('div');
                 div.classList.add('post', 'container');
@@ -65,7 +69,10 @@ export const createProject = (() => {
                         <article class="card__content">
                             <h2 class="card__title title">${post.name}</h2>
                             <p class="card__text">${post.desc}</p>
+<<<<<<< HEAD
                             <p class="card__language">${post.language}</p>
+=======
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
                         </article>
                         <ul class="card__social list">
                             <li class="item item--social">

@@ -56,6 +56,7 @@ hr.separator {
     opacity: 0;
     display: none;
     visibility: hidden;
+<<<<<<< HEAD
 }
 
 .disabled {
@@ -72,3 +73,6 @@ hr.separator {
     background-position: right top;
     background-repeat: no-repeat;
   } */
+=======
+}
+>>>>>>> 82f4e06fc1f6b979b568710fa3676bb4037967e9
